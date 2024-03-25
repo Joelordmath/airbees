@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información Importante para tu Estancia</title>
+    <title>Información importante para tu estadía</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background-image: url('https://raw.githubusercontent.com/Joelordmath/QRs/main/apto_quesada2441.JPG?token=GHSAT0AAAAAACP7EKACPUL3QO2UG5HTATIEZQBYYEQ'); /* URL de la imagen de fondo */
+            background-size: cover;
             color: #484848;
         }
 
@@ -17,7 +19,7 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Cambia el color de fondo y ajusta la opacidad */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -26,6 +28,11 @@
             font-size: 24px;
             margin-bottom: 20px;
             color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         ul {
@@ -38,6 +45,13 @@
             margin-bottom: 10px;
         }
 
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
         a {
             color: #007bff;
             text-decoration: none;
@@ -46,16 +60,47 @@
         a:hover {
             text-decoration: underline;
         }
+
+        footer {
+            position: fixed; /* Fija el footer */
+            bottom: 0; /* Lo sitúa en la parte inferior */
+            width: 100%; /* Ancho completo */
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo del footer */
+            border-top: 1px solid #ccc; /* Línea superior para separar del contenido principal */
+            border-radius: 0 0 8px 8px; /* Esquinas redondeadas solo en la parte inferior */
+            padding: 20px; /* Añade un espacio alrededor del contenido del footer */
+        }
+
+        .whatsapp-link {
+            margin: 0 5px; /* Espacio entre los enlaces */
+            font-size: 14px; /* Tamaño de fuente */
+        }
+
+        .contact-info {
+            font-weight: bold; /* Texto en negrita */
+            margin: 0;
+            padding: 0;
+            line-height: 30px; /* Altura de línea verticalmente centrada */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Información Importante para tu Estancia</h1>
+        <h1>¡Bienvenido!</h1>
+        <p>Gracias por elegirnos! Esperamos que disfrutes tu estadía con nosotros, a continuación te dejamos algo de información útil:</p>
         <ul>
-            <li><a href="https://docs.google.com/document/d/1H1P7xwYYyNVwFuZEMvXnDAI8FFFhYIAhkVcIh0Mv4BE/edit">Lo que debes saber del Apartamento</a></li>
-            <li><a href="https://docs.google.com/document/d/1PmdveKDd6vcMAZB5Oa1yxPPNFHto9Wz5UNHT5GWO5Ms/edit">Lo que debes saber del Edificio</a></li>
-            <li><a href="https://docs.google.com/document/d/1fAlr4fwCNrOkaK7floOImMz8-ZCMBh-HabQ75BBT73U/edit">Lugares de interés</a></li>
+            <li><img class="link-icon" src="https://raw.githubusercontent.com/Joelordmath/QRs/main/home.png?token=GHSAT0AAAAAACP7EKACFXD44IB34N2LRK2YZQBYXVQ" alt="Ícono del Apartamento"><a href="https://docs.google.com/document/d/1H1P7xwYYyNVwFuZEMvXnDAI8FFFhYIAhkVcIh0Mv4BE/edit">Guía del Apartamento</a></li>
+            <li><img class="link-icon" src="https://raw.githubusercontent.com/Joelordmath/QRs/main/office-building.png?token=GHSAT0AAAAAACP7EKAC4RFFS4INA7WACB3WZQBYYBQ" alt="Ícono del Edificio"><a href="https://docs.google.com/document/d/1PmdveKDd6vcMAZB5Oa1yxPPNFHto9Wz5UNHT5GWO5Ms/edit">Reglas del Edificio</a></li>
+            <li><img class="link-icon" src="https://raw.githubusercontent.com/Joelordmath/QRs/main/map.png?token=GHSAT0AAAAAACP7EKACIKMOM2EONARW5FRCZQBYX3Q" alt="Ícono de Lugares de Interés"><a href="https://docs.google.com/document/d/1fAlr4fwCNrOkaK7floOImMz8-ZCMBh-HabQ75BBT73U/edit">Sitios de interés cercanos</a></li>
         </ul>
     </div>
+    <footer>
+        <p class="contact-info">Contáctanos si es necesario, estamos a disposición:</p>
+        <p class="contact-info">
+            <a class="whatsapp-link" href="https://wa.me/5492215488828">Joel +5492215488828</a>
+            <a class="whatsapp-link" href="https://wa.me/5491127901251">Stephy +5491127901251</a>
+        </p>
+    </footer>
 </body>
 </html>

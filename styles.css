@@ -1,0 +1,117 @@
+/* Fuente general (Airbnb usa una fuente sans-serif muy limpia) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://github.com/Joelordmath/QRs/blob/main/apto_quesada2441.JPG?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #484848;
+    height: 100vh; /* Asegura que la altura cubra toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 28px; /* Un tamaño más grande para destacar el encabezado */
+    font-weight: 600; /* Negrita para darle más importancia */
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Lista de enlaces */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista (Enlaces) */
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Iconos de enlaces (pequeños y alineados con el texto) */
+.link-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #007bff; /* Color azul, similar a Airbnb */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilos para pantallas pequeñas (Mobile) */
+@media (max-width: 767px) {
+    /* Ajustar contenedor */
+    .container {
+        padding: 15px 20px; 
+        margin-top: 20px;
+    }
+
+    /* Reducir tamaño del encabezado en móvil */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Ajustar tamaño del texto en los párrafos */
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        padding-right: 9px;
+    }
+
+    /* Reducir el tamaño de los íconos en los enlaces */
+    .link-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Modificar la apariencia de los enlaces */
+    li {
+        font-size: 14px;
+    }
+
+    /* Ajustar márgenes y espaciados */
+    .contact-info, .whatsapp-link {
+        font-size: 12px;
+    }
+}

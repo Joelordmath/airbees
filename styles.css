@@ -19,11 +19,12 @@ body {
 /* Contenedor principal */
 .container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Agrega espacio entre el header y el contenedor */
 }
 
 /* Encabezado principal */

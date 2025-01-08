@@ -15,7 +15,7 @@ def generar_qr(enlace, nombre_archivo):
     img.save(nombre_archivo)
 
 # Enlace a la página web con los enlaces a los documentos
-enlace = "https://joelordmath.github.io/QRs/HTML_1.html"
+enlace = "https://joelordmath.github.io/QRs/"
 nombre_archivo = "QR_Apartamento.png"
 
 # Generar código QR que apunte a la página web

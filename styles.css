@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 140px; /* Ajustamos el margen superior para separar el header */
+    padding-top: 120px; /* Ajustamos el margen superior para separar el header */
 }
 
 /* Contenedor principal */

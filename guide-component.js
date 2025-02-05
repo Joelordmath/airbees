@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const guideContent = document.getElementById('guideContent');
     const closeModal = document.querySelector('.close');
 
+    // Función para cargar contenido dinámicamente en el modal
     function loadHTML(url) {
         fetch(url)
             .then(response => response.text())
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
+    // Abre el modal con contenido específico al hacer clic en los enlaces
     document.getElementById('guia-text').addEventListener('click', function (event) {
         event.preventDefault();
         loadHTML('guia.html');
@@ -43,12 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
         loadHTML('sitios.html');
     });
 
+    // Cerrar el modal al hacer clic en el botón de cierre
     closeModal.addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
+    // Cerrar el modal si se hace clic fuera de la ventana del modal
     window.addEventListener('click', function (event) {
-        if (event.target === modal) {
+        const modal = document.getElementById('guideModal');
+        const modalContent = document.querySelector('.modal-content');
+        if (!modalContent.contains(event.target) && event.target !== modal) {
             modal.style.display = 'none';
         }
     });

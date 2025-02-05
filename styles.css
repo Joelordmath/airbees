@@ -1,22 +1,59 @@
-/* Fuente general (Airbnb usa una fuente sans-serif muy limpia) */
+/* === ESTILOS GENERALES === */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('https://github.com/Joelordmath/QRs/blob/main/apto_quesada2441.JPG?raw=true');
+    background-image: url('https://github.com/Joelordmath/airbees/assets/background.JPG?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #484848;
-    height: 100vh; /* Asegura que la altura cubra toda la pantalla */
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 120px; /* Ajustamos el margen superior para separar el header */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: flex-start; /* Alinea desde el inicio del contenedor */
 }
 
-/* Contenedor principal */
+/* === ESTILOS PARA EL HEADER === */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para dar efecto de separación */
+}
+
+header a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #004a99;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* === SECCIONES === */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -24,95 +61,150 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Agrega espacio entre el header y el contenedor */
-}
-
-/* Encabezado principal */
-h1 {
-    font-size: 28px; /* Un tamaño más grande para destacar el encabezado */
-    font-weight: 600; /* Negrita para darle más importancia */
-    line-height: 1.4;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-
-/* Párrafos */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
+    margin-top: 180px; /* Agrega espacio entre el header y el contenedor */
     text-align: justify;
 }
 
-/* Lista de enlaces */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.highlighted {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
 }
 
-/* Elementos de la lista (Enlaces) */
-li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #333;
+/* === ESTILOS PARA LAS TARJETAS DE INFORMACIÓN === */
+.info-card {
+    display: block; 
+    width: 100%;
+    margin: 0 0 15px 0;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Iconos de enlaces (pequeños y alineados con el texto) */
-.link-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+.info-card img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 10px; 
 }
 
-/* Enlaces */
-a {
-    color: #007bff; /* Color azul, similar a Airbnb */
+.info-card a {
+    display: block;
+    font-weight: normal;
+    color: #0066cc;
+    font-size: 14px;
+}
+
+.info-card a:hover {
+    color: #004a99;
+}
+
+/* Estilos adicionales para el contenedor .info para que los cards se vean alineados */
+.info {
+    display: block;
+    margin-top: 20px;
+}
+
+/* === ESTILOS PARA EL FOOTER === */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #007bff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+footer a:hover {
+    text-decoration: underline;
 }
 
-/* Estilos para pantallas pequeñas (Mobile) */
-@media (max-width: 767px) {
-    /* Ajustar contenedor */
-    .container {
-        padding: 15px 20px; 
-        margin-top: 20px;
+.contact-info, .whatsapp-link {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 12px;
+}
+
+/* === ESTILOS PARA LAS SECCIONES === */
+section {
+    margin: 20px;
+}
+
+/* === ESTILOS PARA LAS TARJETAS DE INFORMACIÓN === */
+.info-card {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.info-card img {
+    width: 30px;
+    height: 30px;
+}
+
+.info-card a {
+    display: block;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.info-card a:hover {
+    color: #004a99;
+}
+
+/* === ESTILOS RESPONSIVOS === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
     }
 
-    /* Reducir tamaño del encabezado en móvil */
+    header p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px;
+        margin-top: 120px;
+    }
+
     h1 {
         font-size: 24px;
     }
 
-    /* Ajustar tamaño del texto en los párrafos */
+    footer {
+        font-size: 12px;
+        margin-block: 5px;
+        margin-top: auto;
+    }
+
     p {
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: justify;
-        padding-right: 9px;
+        font-size: 12px;
+        margin-block: 5px;
     }
 
-    /* Reducir el tamaño de los íconos en los enlaces */
+    .info-card {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
     .link-icon {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
     }
 
-    /* Modificar la apariencia de los enlaces */
-    li {
-        font-size: 14px;
-    }
-
-    /* Ajustar márgenes y espaciados */
     .contact-info, .whatsapp-link {
         font-size: 12px;
     }

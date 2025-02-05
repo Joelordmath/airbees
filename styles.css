@@ -4,15 +4,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('https://github.com/Joelordmath/airbees/blob/main/assets/background.JPG');
+    background-image: url('https://raw.githubusercontent.com/Joelordmath/airbees/main/assets/background.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #484848;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    justify-content: flex-start; /* Alinea desde el inicio del contenedor */
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* === ESTILOS PARA EL HEADER === */
@@ -27,7 +27,7 @@ header {
     padding: 15px;
     font-family: 'Arial', sans-serif;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para dar efecto de separación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header a {
@@ -61,7 +61,7 @@ header p {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 180px; /* Agrega espacio entre el header y el contenedor */
+    margin-top: 180px;
     text-align: justify;
 }
 
